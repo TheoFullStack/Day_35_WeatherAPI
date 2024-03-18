@@ -1,5 +1,5 @@
 import requests
-API_KEY = "3144248a6e8bc6457859430e1d4a8d81"
+API_KEY = "INPUT YOUR OWN API KEY"
 LAT= 43.651070
 LON = -79.347015
 OWM_ENDPOINT = f"https://api.openweathermap.org/data/2.5/forecast?lat={LAT}&lon={LON}&appid={API_KEY}"
