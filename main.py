@@ -26,7 +26,8 @@ client = Client(account_sid, auth_token)
 
 
 
-API_KEY = "3144248a6e8bc6457859430e1d4a8d81"
+#API_KEY = "3144248a6e8bc6457859430e1d4a8d81"
+API_KEY = os.environ.get("OWM_API_KEY1")
 LAT= 43.651070
 LON = -79.347015
 OWM_ENDPOINT = f"https://api.openweathermap.org/data/2.5/forecast?lat={LAT}&lon={LON}&appid={API_KEY}"
@@ -73,7 +74,7 @@ if it_rains:
         .create(
         body="It is going to rain today. Bring an umbrella",
         from_='+15315414858',
-        to='+14168774583'
+        to='TARGET PHONE NUMBER'
     )
     print(message.status)
 
